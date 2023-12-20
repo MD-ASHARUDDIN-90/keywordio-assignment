@@ -1,0 +1,158 @@
+.container {
+  background-color: rgb(220, 220, 220);
+  height: max-content;
+  @media (min-width: 768px) {
+    background-color: none;
+    height: 100vh;
+  }
+}
+
+.content {
+  /* background-color: white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.form {
+  background-color: white;
+  width: 90%;
+  height: 75vh;
+  padding: 0.5rem 1rem;
+}
+
+.headingDescription {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  /* align-items: center; */
+}
+
+.upperHeadInput {
+  flex: 1;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.inputContainer label {
+  font-weight: 600;
+}
+
+.inputContainer input {
+  height: 2rem;
+  border: 1px solid rgb(213, 213, 213);
+  border-radius: 1%;
+  outline: none;
+  padding-left: 1rem;
+}
+
+.inputContainer input:focus {
+  outline: 2px solid rgb(44, 167, 255, 0.4);
+  border: none;
+}
+
+.textContainer {
+  width: 50%;
+  /* flex: 1; */
+}
+
+.textareaClass {
+  resize: none;
+  height: 6.6rem;
+  border: 1px solid rgb(213, 213, 213);
+  border-radius: 1%;
+  padding-left: 1rem;
+  font-family: "Georgia, 'Times New Roman', Times, serif";
+  font-size: medium;
+}
+
+.textareaClass:focus {
+  outline: 2px solid rgb(44, 167, 255, 0.4);
+  border: none;
+}
+
+.threeInputContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+.threeInputContainer .inputContainer {
+  width: 70%;
+}
+
+.inputContainer select {
+  height: 2rem;
+  border: 1px solid rgb(213, 213, 213);
+  border-radius: 1%;
+  outline: none;
+}
+
+.inputContainer select:focus {
+  outline: 2px solid rgb(44, 167, 255, 0.4);
+  border: none;
+}
+.businessInputSelect {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.businessInputSelect .inputContainer {
+  flex: 1;
+}
+
+.buttons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 1rem;
+  height: 20%;
+}
+
+.buttons button {
+  background-color: rgb(21, 98, 253);
+  color: white;
+  padding: 0.5rem 2.5rem;
+  font-size: 1rem;
+  border: none;
+  font-weight: bold;
+  border-radius: 5%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .headingDescription {
+    flex-direction: row; /* Adjusted for responsiveness */
+    gap: 1rem;
+  }
+
+  .upperHeadInput {
+    flex-direction: row; /* Adjusted for responsiveness */
+  }
+
+  .textContainer {
+    width: 100%; /* Adjusted for responsiveness */
+  }
+
+  .threeInputContainer {
+    flex-direction: column; /* Adjusted for responsiveness */
+    gap: 1rem;
+  }
+
+  .threeInputContainer .inputContainer {
+    width: 100%;
+  }
+}
